@@ -20,7 +20,7 @@ body {
     /*DEPOIS QUE ADICIONEI ESSE COMPONENTE, O TEXTO FICOU NO MEIO*/
 }
 
-nav h1{
+nav h1 {
     padding-left: 20px;
 }
 
@@ -36,8 +36,9 @@ nav h1{
     overflow: hidden;
 }
 
-.navbar li{
-    float: left;/*PROPRIEDADE QUE ESTA DEIXANDO O CONTEUDO InLine - HORIZONTAL*/
+.navbar li {
+    float: left;
+    /*PROPRIEDADE QUE ESTA DEIXANDO O CONTEUDO InLine - HORIZONTAL*/
 }
 
 .navbar li a {
@@ -46,4 +47,10 @@ nav h1{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
+
+section{
+    text-align: justify;
+    padding-left: 25px;
+    
+}
