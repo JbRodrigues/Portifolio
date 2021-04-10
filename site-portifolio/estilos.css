@@ -4,37 +4,43 @@
     box-sizing: border-box;
 }
 
+body{
+    color: #CC82AC;
+    background-color: #0D0C22;
+}
+
 
 .container {
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 80vh 10vh;
-    grid-template-areas:
-        "header header"
-        "nav       main"
-        "footer footer";
+    grid-template-rows: 100vh;
+    grid-template-areas:"nav main";
 }
 
 
 main {
     grid-area: main;
-    background: green;
-    width: 70vw;
+    width: 75vw;
+    padding: 2rem;
 }
 
 nav {
     grid-area: nav;
-    background-color: blue;
-    width: 30vw;
+    width: 25vw;
+    padding: 2rem;
+    position: fixed;
+    height: 100vh;
 }
 
-header {
-    grid-area: header;
-    background-color: black;
+.photo {
+    display: flex;
+    justify-content: center;
 }
 
-footer {
-    grid-area: footer;
-    background-color: purple;
+img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
 }
+
