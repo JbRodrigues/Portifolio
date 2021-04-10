@@ -1,20 +1,40 @@
 * {
+    padding: 0%;
+    margin: 0%;
     box-sizing: border-box;
 }
 
-body {
-    background-image: linear-gradient(25deg, #182c1b, #525b50, #918d8d, #d5c3ce);
-    color: black;
+
+.container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:
+        "header header"
+        "nav       main"
+        "footer footer";
 }
 
-.main{
 
+main {
+    grid-area: main;
+    background: green;
+    width: 70vw;
 }
 
-.menu{
-
+nav {
+    grid-area: nav;
+    background-color: blue;
+    width: 30vw;
 }
 
-.photo{
-    
+header {
+    grid-area: header;
+    background-color: black;
+}
+
+footer {
+    grid-area: footer;
+    background-color: purple;
 }
